@@ -9,13 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+<div class="lightbox" id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
 <body>
     <header class="container">
         <nav class="navBar">
             <img class="logo" src="assets\c4k-logo.svg">
             <a href="index.html" class="nav-link">Home</a>
-            <a href="event.html" class="nav-link active">Event</a>
+            <a href="index.html" class="nav-link active">Event</a>
             <a href="about.html" class="nav-link">About</a>
             <a href="contact.html" class="nav-link">Contact</a>
         </nav>
@@ -140,11 +144,81 @@
     </div>
 
     <div class="tab-panel" id="examples">
-      <!-- your guidelines content -->
+        <h1 class="font-darkBlue">Our Creations</h1>
+        <section id="works">
+        <div class="section-background">
+
+            <div class="container swiper">
+            <!-- <div class="card-wrapper"> -->
+
+                <ul class="card-list swiper-wrapper">
+
+                <li class="swiper-slide">
+                    <div class="card-item">
+                    <img class="card-image" src="card assets\works1.svg" alt="card-1">
+                    <div class="card-description">
+                        <img class="card-icon" src="card assets\audicon2.jpg" alt="icon-1">
+                        <h3>Audrey</h3>
+                    </div>
+                    </div>
+                </li>
+                    
+                <li class = "swiper-slide">
+                    <div class="card-item">
+                    <img class="card-image" src="card assets\mikacardimage.png" alt="card-1">
+                    <div class="card-description">
+                        <img class="card-icon" src="card assets\mikapfp2.jpg" alt="icon-1">
+                        <h3>Mika</h3>
+                    </div>
+                    </div>
+                </li>
+
+                <li class = "swiper-slide">
+                    <div class="card-item">
+                    <img class="card-image" src="card assets\works3.svg" alt="card-1">
+                    <div class="card-description">
+                        <img class="card-icon" src="card assets\audicon2.jpg" alt="icon-1">
+                        <h3>Audrey</h3>
+                    </div>
+                    </div>
+                </li>
+
+                <li class = "swiper-slide">
+                    <div class="card-item">
+                    <img class="card-image" src="card assets\4cardimageaud.jpg" alt="card-4">
+                    <div class="card-description">
+                        <img class="card-icon" src="card assets\audicon2.jpg" alt="icon-1">
+                        <h3>Audrey</h3>
+                    </div>
+                    </div>
+                </li>
+
+                </ul>
+            <!-- </div> -->
+
+            <div class="swiper-pagination"></div>
+
+        <div class="swiper-buttons">
+          <div class="swiper-button-prev"><img src="card assets/arrow-left.svg"></div>
+          <div class="swiper-button-next"><img src="card assets/arrow-right.svg"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+        
+
+
+
+
+
+
+
     </div>
 
     <div class="tab-panel" id="prizes">
-      <!-- your prizes content -->
+      <h1 class="font-darkBlue">Prizes</h1>
+    <h2 class="font-pink" style="margin-top: 10px; margin-bottom: 15px;">Prizes are still being decided — we want your input!</h2>
+    <p>We're working on putting together something special for our card makers. Have a suggestion for what prizes you'd love to see? Let us know through the contact page — we'd love to hear from you!</p>
     </div>
 
   </div>

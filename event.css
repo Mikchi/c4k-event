@@ -378,11 +378,6 @@ img{
 .guidelinesRightSection .stepBox p {
     margin-left: 52px;
 }
-.guidelinesRightSection {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
 .guidelineList ul {
     padding-left: 3rem;
     font-size: 22px;
@@ -393,7 +388,25 @@ img{
     text-align: left;
     margin-left: 80px;
 }
+.guidelinesRightSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+}
 
+.guidelinesRightSection .stepBox {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.guidlinesLeftSection {
+    display: flex;
+}
+
+.guidlinesLeftSection .stepBox {
+    flex: 1;
+}
 /* Media Queries */
 /* Tablet (max 1024px) */
 @media (max-width: 1024px) {
@@ -466,4 +479,190 @@ img{
     }
     .sparkle { display: none; }
     h1 { font-size: 1.8rem; }
+}
+
+/* examples section */
+#works{
+    margin-inline: 9px;
+}
+#works .section-background{
+    padding-inline: 0;
+}
+#works h1{
+    color: white;
+}
+.swiper-slide{
+    margin-bottom: 28px;
+}
+.card-list{
+    list-style: none;
+}
+.card-image {
+    width: 230px;
+    aspect-ratio: 5/7;
+    object-fit: cover;
+    border-radius:7px;
+    margin-bottom: 10px;
+}
+.card-icon {
+   width: 43px; 
+   aspect-ratio: 1/1;
+   margin-right: 8px;
+   border-radius: 50%;
+}
+.card-description{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    padding-top: 3px;
+    padding-bottom: 15px;
+}
+.card-list{
+    /* display: flex;
+    padding: 0;
+    margin: auto;
+    padding-bottom: 25px; */
+    display: flex;
+    /* gap: 20px; */
+    scroll-snap-type: x mandatory;
+    /* padding: 0 15px; */
+    width: max-content;
+    padding-inline-start: 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    cursor: pointer;
+}
+.swiper-button-prev:hover,  .swiper-button-next:hover{
+  transform: scale(1.1) translateY(-3px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-item {
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 11.5px;
+    /* margin-left: 50px; */
+    max-width: 255px; 
+    margin: auto;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+     
+}
+
+h3 {
+    font-family: "DM Sans", sans-serif;
+    color: #ea51a1;
+}
+
+
+#works h1{
+   
+}
+
+#works .container{
+    position: relative;
+}
+.swiper-buttons{
+    position: absolute;
+    top: 38%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
+}
+.swiper-pagination{
+    /* bottom: 0 !important; */
+}
+.swiper {
+    overflow: hidden;
+}
+#works {
+    overflow: hidden;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lightbox img {
+    max-width: 55vw;
+    max-height: 95vh;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+}
+#examples > h1 {
+    margin-bottom: 30px;
+    /* padding-top: 10px; */
+}
+
+h3 {
+    font-family: "DM Sans", sans-serif;
+    color: #ea51a1;
+    animation: fadeIn 0.8s ease-out both;
+}
+.card-item {
+    overflow: hidden;
+}
+/* .card-list .card-item {
+    user-select: none;
+} */
+
+/* END OF WORKS SECTION */
+
+
+
+
+
+
+/* ABOUT SECTION */
+#about-page main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px 20px;
+    gap: 16px;
+    background: url("assets/mainEventBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-page h2 {
+    font-family: "DM Sans", sans-serif;
+    max-width: 800px;
+}
+
+#about-page p {
+    max-width: 700px;
+}
+#about-page h1 {
+    font-size: 4rem;
+}
+
+#about-page h2 {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #ff8cc0;
+    max-width: 750px;
+}
+
+#about-page p {
+    font-size: 1.3rem;
+    color: #292929;
+    max-width: 600px;
 }

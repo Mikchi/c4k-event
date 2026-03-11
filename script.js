@@ -45,3 +45,39 @@ function switchTab(index) {
     panels[index].classList.add('active');
     buttons[index].classList.add('active');
 }
+document.addEventListener("DOMContentLoaded",function() {
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    simulateTouch: false,  // add this
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        0:    { slidesPerView: 1 },
+        640:  { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+    }
+});
+});
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+document.querySelectorAll('.card-item').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', () => {
+        lightboxImg.src = card.querySelector('.card-image').src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
